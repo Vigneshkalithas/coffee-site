@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar h2{
+    font-size: 1.3rem;
+    padding: 0 .5rem 0rem 0.5rem;    
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap:1rem;
+    padding: 0 .5rem 0rem 0.5rem;
+
+}
+.navbar ul li{
+    font-size: .7rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+.banner{
+    background-image: url("http://teespring-storecontent.s3.amazonaws.com/OMJ95BcTPPMDUf4y_8PAFA_store_banner_image?1480319653676");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%; */
+    height: 380px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+.banner h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 1rem 0 1rem 0rem;
+   
+}
+.banner p{
+    font-size: .8rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+   
+}
+.track{
+    margin: 4rem 0rem 4rem 0rem;
+    /* background-image: url("https://cdn.cbeditz.com/cbeditz/large/11614421194s2rc38p8rw19j876y7231x2l6vzpsr5panvfertfmx2zozei8icturbcd8zuutpft9fq2b8idi1eykxuxygww4wtj7izr2lxga9r.jpg"); */
+    background-color: #2b353e;
+    /* height: 100%; */
+    padding: 5rem;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.works-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:3rem;
+}
+
+.works-card h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: coral;
+    }
+    .works-card h2{
+        color: white;
+    }
+    .works-card p{
+        font-size: .8rem;
+        font-weight: bold;
+        color: white;
+        
+        }
+    .inner-work{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    }
+    
+    .left ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap:1.2rem;
+        margin: 0rem 0rem 2rem 0rem;
+    }
+.left ul li{
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+    font-weight: bold;
+    
+    /* border-top: 1px solid black; */
+}
+    .left ul li:hover{
+        color: teal;
+
+}
+.content-head-create{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.smal-card{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    background-color: #f4f1e8;
+    border-radius: 5px;
+    text-align: left;
+}
+.smal-card h3{
+    font-size: 1rem;
+    
+}
+.smal-card p{
+font-size: 13px;
+}
+
+.teal{
+    background-color: teal;
+    color: white;
+}
+.teal h3{
+    font-size: 1rem;
+    
+}
+.teal p{
+font-size: 13px;
+/* color: white; */
+}
+.small-card-head{
+    display: flex;
+    gap:1.2rem;
+    margin: 4.5rem 0 4.5rem 0;
+}
+.summary-head{
+    background-color: black;
+    color:white;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+.summary-head h6{
+    margin: 1rem 0 1rem 0rem;
+    
+}
+.btn-head{
+    display: flex;
+    justify-content:flex-end;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    margin: 2rem 0 2rem 0rem;
+}
+
+.footer{
+    width: 100%;
+    height:70px;
+    background-color: #2b353e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.footer ul{
+list-style: none;
+display: flex;
+gap:0.8rem;
+}
+.footer h2{
+    font-size: 1.4rem;
+    }
+.footer ul li{
+    font-size:  10px;
+    font-weight: bold;
+}
+.foot-icon{
+    display: flex;
+    gap:0.5rem;
+    font-size: 1.2rem;
+}
+.sidebar-icon{
+    display: none;
+}
+
+@media only screen and (max-width:800px){
+    .right h2{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .navbar ul{
+        display: none;
+    
+    }
+    .sidebar-icon{
+        display:inline;
+        padding: 1rem;
+        font-size:1rem;
+    
+    }
+    .small-card-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1.2rem;
+        margin: 4.5rem 0 4.5rem 0;
+    }
+    .smal-card{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 250px;
+        background-color: #f4f1e8;
+        border-radius: 5px;
+        text-align: left;
+    }
+    .teal{
+        background-color: teal;
+        color: white;
+    }
+    .footer{
+        display: flex;
+        height: 200px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+}

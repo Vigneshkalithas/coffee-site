@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar h2{
+    font-size: 1.3rem;
+    padding: 0 .5rem 0rem 0.5rem; 
+    font-family: serif;   
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap:1rem;
+    padding: 0 .5rem 0rem 0.5rem;
+
+}
+.navbar ul li{
+    font-size: .7rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+.sidebar-icon{
+    display: none;
+}
+/* .navbar ul li:hover{
+    color: white;
+} */
+.banner-head{
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    background-image: url("https://images.prismic.io/scenicworld%2F79a0d316-f13d-4d22-b920-681f485031a4_hot-chocolate-blue-mountains.jpg?auto=compress%2Cformat&h=720&rect=0%2C338%2C3200%2C1440&w=1600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    /* border-radius: 10px; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+.banner h1{
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+    margin: 1.2rem 0rem 1.2rem 0rem;
+    font-family: serif;   
+
+}
+.banner p{
+    font-size: .9rem;
+    letter-spacing: .4px;
+    margin: 1.2rem 0rem 1.2rem 0rem;
+}
+.commit-head{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 5rem;
+
+}
+.cmd-image{
+    width: 300px;
+    height:350px;
+    border-radius:5px;
+}
+.commit-head h2{
+    font-size: 25px;
+}
+
+.commit-head p{
+text-align: justify;
+font-size: 14px;
+font-weight: bold;
+
+}
+.cmd-text{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.about-foot{
+    margin: 2rem 0rem 0rem 0rem;
+    height: 250px;
+    width: 100%;
+    background-color:#2a313b;
+    display: flex;
+   align-items: center;
+    justify-content: space-around;
+   
+}
+.about-foot h2{
+    margin: 1rem 0rem 1rem 0rem;
+    color: white;
+    letter-spacing: .8px;
+}
+.about-foot  p{
+    margin: .8rem 0rem .8rem 0rem;
+    color: white;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+.foot-image{
+    width: 220px;
+    height: 270px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 5.5rem;
+}
+
+
+@media only screen and (max-width:750px){
+    .commit-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center;
+        padding: 2rem; */
+        gap: 5rem;
+    
+    }
+    .foot-image{
+        display: none;
+    }
+   
+    
+   
+}
+
+@media only screen and (max-width:600px){
+
+.navbar ul{
+    display: none;
+
+}
+.sidebar-icon{
+    display:inline;
+    padding: 1rem;
+    font-size:1rem;
+
+}
+}
